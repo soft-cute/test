@@ -6,9 +6,9 @@ jobs:
     name: My Job
     runs-on: ubuntu-latest
     steps: 
-      - name: Print a greeting
-      - uses: actions/checkout@v3
-        run: |
-          git -v
-          ls -a
-          echo ${{ secrets.test }}
+    - name: Print a greeting
+    - uses: actions/checkout@v3
+      run: |
+        git -v
+        ls -a
+        echo ${{ secrets.test }}
