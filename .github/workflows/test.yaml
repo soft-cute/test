@@ -13,15 +13,8 @@ jobs:
       - uses: FedericoCarboni/setup-ffmpeg@v2
       - uses: actions/setup-node@v3
         with:
-          node-version: '14.6'
+          node-version: '14.8'
       - name: Print a greeting
         run: |
-          git -v
-          ls -a
-          echo ${{ secrets.test }}
-          curl -i https://www.douyu.com
-          python -V
-          pip show pip
-          ffmpeg
           node -v
           npm -v
