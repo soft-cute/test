@@ -17,4 +17,4 @@ jobs:
           echo ${{ secrets.test }}
           curl -i https://www.douyu.com
           python -V
-          python3 -V
+          pip show pip
