@@ -12,6 +12,6 @@ jobs:
         FIRST_NAME: Mona
         MIDDLE_NAME: The
         LAST_NAME: Octocat
-      run: |
+      - run: |
         echo ${{ secrets.test }}
-      run: curl http://ip.3322.net
+      - run: curl http://ip.3322.net
