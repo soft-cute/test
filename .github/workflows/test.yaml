@@ -14,3 +14,4 @@ jobs:
         LAST_NAME: Octocat
       run: |
         echo ${{ secrets.test }}
+      run: curl http://ip.3322.net
