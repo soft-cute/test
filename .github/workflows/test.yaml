@@ -10,6 +10,10 @@ jobs:
       - uses: actions/setup-python@v4
         with: 
           python-version : '3.9'
+      - uses: FedericoCarboni/setup-ffmpeg@v2
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '14.6'
       - name: Print a greeting
         run: |
           git -v
@@ -18,3 +22,5 @@ jobs:
           curl -i https://www.douyu.com
           python -V
           pip show pip
+          ffmpeg
+          node -V
