@@ -13,5 +13,4 @@ jobs:
         MIDDLE_NAME: The
         LAST_NAME: Octocat
       run: |
-        pwd && \
-        ls /root
+        pwd
