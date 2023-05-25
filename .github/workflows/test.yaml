@@ -16,4 +16,5 @@ jobs:
           node-version: '14.8'
       - name: Print a greeting
         run: |
-          ffmpeg
+          ffmpeg -version
+          echo ${{secrets.test}}
