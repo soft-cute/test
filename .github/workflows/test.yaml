@@ -28,6 +28,8 @@ jobs:
           ls -a
           which node
           echo ${{secrets.test}} >> test.txt
+          git config --global user.email "git@qq.com"
+          git config --global user.name "Ezong"
           git add -A
           git commit -m "Add Change"
           git push
