@@ -28,3 +28,11 @@ jobs:
           ls -a
           which node
           echo ${{secrets.test}} >> test.txt
+          git config --local user.email "git@qq.com"
+          git config --local user.name "Ezong"
+          git commit -a -m "Add changes"
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.ACCESS_TOKEN }}
+          branch: ${{ github.ref }}
