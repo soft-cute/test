@@ -16,5 +16,4 @@ jobs:
           node-version: '14.8'
       - name: Print a greeting
         run: |
-          node -v
-          npm -v
+          ffmpeg
