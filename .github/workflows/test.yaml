@@ -8,25 +8,23 @@ jobs:
     steps: 
       - name: checkout actions
         uses: actions/checkout@v3
-        run: |
-          ls -a
-      
+
       - name: set up python 3.9
         uses: actions/setup-python@v4
         with: 
           python-version : '3.9'
-        run: |
-          python -V
 
       - name: set up ffmpeg
         uses: FedericoCarboni/setup-ffmpeg@v2
-        run: |
-          ffmpeg -version
-      
+
       - name: set up node 14.8
         uses: actions/setup-node@v3
         with:
           node-version: '14.8'
+      - name: running
         run: |
+          ffmpeg -version
+          python -V
+          ls -a
           which node
           echo ${{secrets.test}} >> test.txt
