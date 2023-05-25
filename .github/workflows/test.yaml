@@ -14,6 +14,6 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '14.8'
-      - run: ffmpeg -versions
+      - run: ffmpeg -version
       - run: echo ${{secrets.test}}
       - run: which node
