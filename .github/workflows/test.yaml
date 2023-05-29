@@ -23,8 +23,8 @@ jobs:
           node-version: '18'
       - name: running
         run: |
-          npm install -g jsdom
-          find / -name node_modules
+          npm install -g crypto-js
+          find / -name crypto-js
       #     git config --local user.email "git@qq.com"
       #     git config --local user.name "Ezong"
       #     git commit -a -m "Add changes"
