@@ -23,18 +23,13 @@ jobs:
           node-version: '14.8'
       - name: running
         run: |
-          ffmpeg -version
-          python -V
-          ls -a
-          which node
-          echo ${{secrets.test}} >> test.txt
-          echo ${{ github.ref }} >> test.txt
-          echo ${{ github.head_ref }} >> test.txt
-          git config --local user.email "git@qq.com"
-          git config --local user.name "Ezong"
-          git commit -a -m "Add changes"
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.github_token }}
-          branch: ${{ github.ref }}
+          pip install pyexecjs requests
+          python aa.py
+      #     git config --local user.email "git@qq.com"
+      #     git config --local user.name "Ezong"
+      #     git commit -a -m "Add changes"
+      # - name: Push changes
+      #   uses: ad-m/github-push-action@master
+      #   with:
+      #     github_token: ${{ secrets.github_token }}
+      #     branch: ${{ github.ref }}
