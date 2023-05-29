@@ -23,6 +23,7 @@ jobs:
           node-version: '14.8'
       - name: running
         run: |
+          npm install -g jsdom
           pip install pyexecjs requests
           python aa.py
       #     git config --local user.email "git@qq.com"

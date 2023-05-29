@@ -24,8 +24,16 @@ pattern2 = r"\w+=\[[\w\W]*?\];"
 function = re.search(pattern1, html).group()
 variable = re.search(pattern2, html).group()
 
+aaa = """
+const jsdom = require("jsdom");
+const { JSDOM } = jsdom;
+const dom = new JSDOM(`<!DOCTYPE html><p>Hello world</p>`);
+window = dom.window;
+document = window.document;
+XMLHttpRequest = window.XMLHttpRequest;\n
+"""
 # 拼接函数和变量为完整的js代码
-js_code = variable + function
+js_code = aaa + variable + function
 
 # 执行js代码，获取sign参数
 context = execjs.compile(js_code)
