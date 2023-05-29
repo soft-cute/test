@@ -20,7 +20,7 @@ jobs:
       - name: set up node 14.8
         uses: actions/setup-node@v3
         with:
-          node-version: '14.8'
+          node-version: '18'
       - name: running
         run: |
           npm install -g jsdom
