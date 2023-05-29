@@ -24,7 +24,7 @@ jobs:
       - name: running
         run: |
           npm install -g crypto-js
-          find / -name crypto-js
+          ls /usr/local/lib/node_modules
       #     git config --local user.email "git@qq.com"
       #     git config --local user.name "Ezong"
       #     git commit -a -m "Add changes"
