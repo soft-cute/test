@@ -24,7 +24,8 @@ jobs:
       - name: running
         run: |
           npm install -g jsdom
-          pip install pyexecjs requests
+          pip install pyexecjs requests transcrypt
+          transcrypt -b ub98484234.js
           python aa.py
       #     git config --local user.email "git@qq.com"
       #     git config --local user.name "Ezong"
