@@ -6,7 +6,7 @@ import os
 
 
 
-a = os.getenv('douyin-cookies')
+a = os.getenv('DOUYIN-COOKIES')
 print(a)
 
 
