@@ -1,6 +1,5 @@
 import datetime
-
+import subprocess
 import os
 
-
-print(os.getcwd())
+subprocess.run('git -version')
