@@ -1,5 +1,6 @@
 import datetime
 import subprocess
 import os
+import sys
 
-subprocess.run("ffmpeg -version")
+os.system("ffmpeg -version")
