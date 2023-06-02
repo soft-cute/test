@@ -27,7 +27,7 @@ jobs:
       - name: running
         run: |
           npm install -g crypto-js
-          pwd
+          which git
           echo $PATH
           python aa.py
           
