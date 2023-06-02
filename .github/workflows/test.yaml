@@ -27,6 +27,7 @@ jobs:
       - name: running
         run: |
           npm install -g crypto-js
+          apt install git
           ls /usr/local/lib/heroku/node_modules/
           pwd
           echo $SHELL
