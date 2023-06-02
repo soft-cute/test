@@ -10,4 +10,4 @@ a = os.getenv('DOUYIN-COOKIES')
 print(a)
 
 
-print(datetime.datetime.now().date())
+print(datetime.datetime.now())
