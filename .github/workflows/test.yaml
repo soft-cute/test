@@ -28,7 +28,7 @@ jobs:
         run: |
           npm install -g crypto-js
           pwd
-          echo $SHELL
+          echo $PATH
           python aa.py
           
       #     git config --local user.email "git@qq.com"
