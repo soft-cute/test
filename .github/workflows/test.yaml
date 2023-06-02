@@ -2,6 +2,7 @@ name: Greeting from Mona
 on: push
 
 env: 
+  TZ: Asia/Shanghai
   DOUYIN-COOKIES: ${{ secrets.test }}
 jobs:
   my-job:
