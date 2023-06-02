@@ -3,4 +3,4 @@ import subprocess
 import os
 import sys
 
-os.system("ffmpeg -version")
+os.system("git -version")
