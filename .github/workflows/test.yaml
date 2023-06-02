@@ -22,9 +22,13 @@ jobs:
         with:
           node-version: '18'
       - name: running
+        env: 
+          DOUYIN-COOKIES: ${{ secrets.test }}
         run: |
           npm install -g crypto-js
-          ls /usr/local/lib/node_modules
+          ls /usr/local/lib/heroku/node_modules/
+          pwd
+          
       #     git config --local user.email "git@qq.com"
       #     git config --local user.name "Ezong"
       #     git commit -a -m "Add changes"
