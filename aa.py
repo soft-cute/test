@@ -2,4 +2,4 @@ import datetime
 import subprocess
 import os
 
-subprocess.run('git -version')
+subprocess.run("bash -c 'git -version'")
