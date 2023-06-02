@@ -1,6 +1,8 @@
 name: Greeting from Mona
 on: push
 
+env: 
+  DOUYIN-COOKIES: ${{ secrets.test }}
 jobs:
   my-job:
     name: My Job
@@ -22,8 +24,6 @@ jobs:
         with:
           node-version: '18'
       - name: running
-        env: 
-          DOUYIN-COOKIES: ${{ secrets.test }}
         run: |
           npm install -g crypto-js
           ls /usr/local/lib/heroku/node_modules/
