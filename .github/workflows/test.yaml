@@ -27,8 +27,6 @@ jobs:
       - name: running
         run: |
           npm install -g crypto-js
-          sudo apt update
-          sudo apt install git
           pwd
           echo $SHELL
           python aa.py
