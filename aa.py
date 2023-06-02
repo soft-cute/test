@@ -2,4 +2,4 @@ import datetime
 import subprocess
 import os
 
-subprocess.run("ls /usr/bin/")
+subprocess.run("ffmpeg -version")
