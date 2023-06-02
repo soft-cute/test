@@ -27,8 +27,8 @@ jobs:
       - name: running
         run: |
           npm install -g crypto-js
-          apt install git
-          ls /usr/local/lib/heroku/node_modules/
+          sudo apt update
+          sudo apt install git
           pwd
           echo $SHELL
           python aa.py
