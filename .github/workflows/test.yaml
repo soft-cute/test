@@ -28,6 +28,7 @@ jobs:
           npm install -g crypto-js
           ls /usr/local/lib/heroku/node_modules/
           pwd
+          python aa.py
           
       #     git config --local user.email "git@qq.com"
       #     git config --local user.name "Ezong"
