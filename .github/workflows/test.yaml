@@ -30,6 +30,7 @@ jobs:
           which git
           echo $PATH
           python aa.py
+          ls -a
           
       #     git config --local user.email "git@qq.com"
       #     git config --local user.name "Ezong"
