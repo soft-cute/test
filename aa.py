@@ -15,6 +15,6 @@ data = f"""bash -c 'ffmpeg -t 19800 -i "{url}" -c:a copy -c:v copy -f segment -s
 
 subout = subprocess.run(data,shell=True)
 
-print(subout)
+
  
 Aligo()
