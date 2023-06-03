@@ -16,6 +16,4 @@ from aligo import Aligo
 # print(subout)
  
 # Aligo()
-subprocess.run(
-            'bash -c "git add ./aaa.txt && git commit -m "Add changes" && git push --all"',shell=True
-        )
+subprocess.run( 'bash -c "git add ./aaa.txt && git commit -m "Add changes" && git push --all"',shell=True)
