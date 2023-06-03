@@ -27,8 +27,7 @@ jobs:
       - name: running
         run: |
           npm install -g crypto-js
-          which git
-          echo $PATH
+          touch aaa.txt
           python aa.py
           ls -a
           

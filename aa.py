@@ -4,8 +4,7 @@ import os
 import sys
 
 
-if not os.path.exists('豆子❤️梨形身材女装'):
-    os.makedirs('豆子❤️梨形身材女装')
+subprocess.run('git add ./aaa.txt && git commit -m "add changes" && git push --all')
 
 
  
