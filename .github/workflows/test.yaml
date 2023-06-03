@@ -19,6 +19,7 @@ jobs:
 
       - name: set up ffmpeg
         uses: FedericoCarboni/setup-ffmpeg@v2
+        id: setup-ffmpeg
 
       - name: set up node 14.8
         uses: actions/setup-node@v3
