@@ -17,8 +17,14 @@ jobs:
         with: 
           python-version : '3.9'
 
+      # - name: set up ffmpeg
+      #   uses: FedericoCarboni/setup-ffmpeg@v2
+
       - name: set up ffmpeg
-        uses: FedericoCarboni/setup-ffmpeg@v2
+        run: |
+          sudo apt update
+          sudo apt install ffmpeg
+
 
       - name: set up node 14.8
         uses: actions/setup-node@v3
