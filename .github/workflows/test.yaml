@@ -26,6 +26,7 @@ jobs:
           node-version: '18'
       - name: running
         run: |
+          pip install aligo
           git config --local user.email "git@qq.com"
           git config --local user.name "Ezong"
           mkdir -p ~/.aligo/
