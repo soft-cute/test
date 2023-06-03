@@ -18,7 +18,12 @@ jobs:
           python-version : '3.9'
 
       - name: set up ffmpeg
-        uses: FedericoCarboni/setup-ffmpeg@v2
+        uses: Iamshankhadeep/setup-ffmpeg@v1.2
+        with:
+          # Not strictly necessary, but it may prevent rate limit
+          # errors especially on GitHub-hosted macos machines.
+          token: ${{ secrets.GITHUB_TOKEN }}
+          version: "5.0"
 
       - name: set up node 14.8
         uses: actions/setup-node@v3
@@ -34,7 +39,7 @@ jobs:
           cat >> ~/.aligo/aligo.json << EOF
           ${{ secrets.test }}
           EOF
-          bash -c 'ffmpeg -t 19800 -i "http://open-tct.douyucdn2.cn/dyliveflv3a/115280rZMKulyF7Q_2000.flv?wsAuth=9155c8b109f4c32236cbfcaaf2f49406&token=cpn-androidmpro-0-115280-580dca762c3607264118cbc28271899d1c514268ca9df17e&logo=0&expire=0&did=a6b66c7c81a583ee867932bbc99f238a&origin=tct&vhost=play4&sid=351418660" -c:a copy -c:v copy a.mp4'
+          bash -c 'ffmpeg -t 19800 -i "http://open-tct.douyucdn2.cn/dyliveflv3a/115280rZMKulyF7Q_2000.flv?wsAuth=9155c8b109f4c32236cbfcaaf2f49406&token=cpn-androidmpro-0-115280-580dca762c3607264118cbc28271899d1c514268ca9df17e&logo=0&expire=0&did=a6b66c7c81a583ee867932bbc99f238a&origin=tct&vhost=play4&sid=351418660" -c:a copy -c:v copy -f segment -segment_time 3600 -strftime 1 %Y-%m-%d-%H-%M-%S.mp4'
           python aa.py
           
 
