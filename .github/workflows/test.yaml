@@ -22,8 +22,9 @@ jobs:
 
       - name: set up ffmpeg
         run: |
+          git clone https://git.launchpad.net/ubuntu/+source/ffmpeg
           sudo apt update
-          sudo apt install ffmpeg
+          sudo apt install ffmpeg yasm
 
 
       - name: set up node 14.8
