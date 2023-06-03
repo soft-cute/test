@@ -35,7 +35,7 @@ jobs:
           ${{ secrets.test }}
           EOF
           python aa.py
-          ls download/抖音录播/豆子❤️梨形身材女装/
+          ls download/抖音录播/豆子❤️梨形身材女装/2023-06-03
           
 
       #     git commit -a -m "Add changes"
