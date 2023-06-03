@@ -27,10 +27,13 @@ jobs:
       - name: running
         run: |
           pip install aligo
+
           git config --local user.email "git@qq.com"
           git config --local user.name "Ezong"
           mkdir -p ~/.aligo/
-          echo ${{ secrets.test }} > ~/.aligo/aligo.json
+          cat >> ~/.aligo/aligo.json << EOF
+          ${{ secrets.test }}
+          EOF
           python aa.py
           
 
