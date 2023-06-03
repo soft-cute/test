@@ -22,7 +22,6 @@ jobs:
 
       - name: set up ffmpeg
         run: |
-          git clone https://git.launchpad.net/ubuntu/+source/ffmpeg
           sudo apt update
           sudo apt install ffmpeg yasm
 
@@ -41,6 +40,7 @@ jobs:
           cat >> ~/.aligo/aligo.json << EOF
           ${{ secrets.test }}
           EOF
+          touch aaa.txt
           python aa.py
           
 
