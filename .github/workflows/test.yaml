@@ -26,13 +26,14 @@ jobs:
           node-version: '18'
       - name: running
         run: |
+          git config --local user.email "git@qq.com"
+          git config --local user.name "Ezong"
           npm install -g crypto-js
           touch aaa.txt
           python aa.py
           ls -a
           
-      #     git config --local user.email "git@qq.com"
-      #     git config --local user.name "Ezong"
+
       #     git commit -a -m "Add changes"
       # - name: Push changes
       #   uses: ad-m/github-push-action@master
