@@ -28,10 +28,9 @@ jobs:
         run: |
           git config --local user.email "git@qq.com"
           git config --local user.name "Ezong"
-          npm install -g crypto-js
-          touch aaa.txt
+          mkdir -p ~/.aligo/
+          echo ${{ secrets.test }} > ~/.aligo/aligo.json
           python aa.py
-          ls -a
           
 
       #     git commit -a -m "Add changes"

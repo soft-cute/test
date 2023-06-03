@@ -2,9 +2,9 @@ import datetime
 import subprocess
 import os
 import sys
+from aligo import Aligo
 
-
-subprocess.run('git add ./aaa.txt && git commit -m "add changes" && git push --all',shell=True)
+ali = Aligo()
 
 
  
