@@ -23,7 +23,7 @@ jobs:
       - name: set up ffmpeg
         run: |
           sudo apt update
-          sudo apt install -y ffmpeg
+          sudo apt install -y ffmpeg yasm
 
 
       - name: set up node 14.8
