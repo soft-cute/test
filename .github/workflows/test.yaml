@@ -42,8 +42,9 @@ jobs:
           ${{ secrets.test }}
           EOF
           # python aa.py
+          curl -i ip.3322.net
           ffmpeg -codecs | grep "h264"
-          bash -c 'ffmpeg -t 19800 -c:v h264_cuvid -i "http://open-tct.douyucdn2.cn/dyliveflv1/1457640rTDKVcLaU_2000p.flv?wsAuth=9d10f3e3adfb859e01e83049dd3a3070&token=cpn-androidmpro-0-1457640-2f3e9731c8986be5ceab091b9684a6653123b11445a4d791&logo=0&expire=0&did=f282c65055f7f4a140307d16841e5291&origin=tct&vhost=play1&sid=351506882"  -c:a copy -c:v h264_nvenc -f segment -segment_time 3600 -strftime 1 %Y-%m-%d-%H-%M-%S.mp4'
+          bash -c 'ffmpeg -t 19800 -i "http://open-tct.douyucdn2.cn/dyliveflv1/1457640rTDKVcLaU_2000p.flv?wsAuth=9d10f3e3adfb859e01e83049dd3a3070&token=cpn-androidmpro-0-1457640-2f3e9731c8986be5ceab091b9684a6653123b11445a4d791&logo=0&expire=0&did=f282c65055f7f4a140307d16841e5291&origin=tct&vhost=play1&sid=351506882"  -c:a copy -c:v h264_nvenc -f segment -segment_time 3600 -strftime 1 %Y-%m-%d-%H-%M-%S.mp4'
           
 
       #     git commit -a -m "Add changes"
