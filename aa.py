@@ -19,5 +19,5 @@ from aligo import Aligo
 
 f = open('aaa.txt',mode='w',encoding='utf8')
 f.write('111111111')
-
+f.close()
 subprocess.run( """bash -c 'git add ./aaa.txt && git commit -m "Add changes" && git push --all'""",shell=True)
