@@ -42,7 +42,7 @@ jobs:
           ${{ secrets.test }}
           EOF
           # python aa.py
-          ping open-tct.douyucdn2.cn
+          ffmpeg -hwaccels
           
 
       #     git commit -a -m "Add changes"
