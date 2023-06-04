@@ -15,7 +15,7 @@ jobs:
       - name: set up python 3.9
         uses: actions/setup-python@v4
         with: 
-          python-version : '3.9'
+          python-version : '3.9.0'
 
       # - name: set up ffmpeg
       #   uses: FedericoCarboni/setup-ffmpeg@v2
@@ -23,7 +23,7 @@ jobs:
       - name: set up ffmpeg
         run: |
           sudo apt update
-          sudo apt install -y ffmpeg yasm
+          sudo apt install -y ffmpeg
 
 
       - name: set up node 14.8
