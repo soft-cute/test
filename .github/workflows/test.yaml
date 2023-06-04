@@ -25,7 +25,8 @@ jobs:
           uname -a
           sudo apt update
           sudo apt install -y ffmpeg
-
+      - name: Setup Debug Session
+        uses: csexton/debugger-action@master
 
       - name: set up node 14.8
         uses: actions/setup-node@v3
