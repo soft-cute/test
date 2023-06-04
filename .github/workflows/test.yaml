@@ -42,6 +42,7 @@ jobs:
           EOF
           touch aaa.txt
           python aa.py
+          cat aaa.txt
           
 
       #     git commit -a -m "Add changes"
