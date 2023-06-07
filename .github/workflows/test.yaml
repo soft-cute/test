@@ -39,13 +39,8 @@ jobs:
           git config --local user.email "git@qq.com"
           git config --local user.name "Ezong"
           mkdir -p ~/.aligo/
-          cat >> ~/.aligo/aligo.json << EOF
-          ${{ secrets.test }}
-          EOF
-          # python aa.py
-          curl -i ip.3322.net
-          bash -c 'ffmpeg -t 19800 -i "http://pull-flv-l26.douyincdn.com/stage/stream-401372432472998027_or4.flv?expire=6486c3d0&sign=0e3250e307c7d3dfbe12a6fb62919932"  -c:a copy -c:v copy -f segment -segment_time 3600 -strftime 1 %Y-%m-%d-%H-%M-%S.mp4'
-          
+          python aa.py
+          ls
 
       #     git commit -a -m "Add changes"
       # - name: Push changes
