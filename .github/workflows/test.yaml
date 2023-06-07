@@ -22,9 +22,18 @@ jobs:
 
       - name: set up ffmpeg
         run: |
-          uname -a
-          sudo apt update
-          sudo apt install -y ffmpeg
+          git clone git@github.com:FFmpeg/FFmpeg.git
+          cd ffmpeg
+          sudo apt install -y aptitude
+          sudo aptitude install -y build-essential
+          sudo aptitude install -y yasm nasm
+          sudo apt-get install -y libgmp3-dev
+          sudo apt install -y pkg-config gnutls-bin
+          sudo aptitude install -y libaom-dev libass-dev libbluray-dev libfdk-aac-dev libmp3lame-dev libopencore-amrnb-dev libopencore-amrwb-dev libopenmpt-dev libopus-dev libshine-dev libsnappy-dev libsoxr-dev libspeex-dev libtheora-dev libtwolame-dev libvo-amrwbenc-dev llibvpx-dev libwavpack-dev libwebp-dev libx264-dev libx265-dev libxvidcore-dev liblzma-dev
+          ./configure --prefix=/usr/FFmpeg --enable-shared --enable-gpl --enable-version3 --enable-sdl2 --enable-fontconfig --enable-gnutls --enable-iconv --enable-libass --enable-libbluray --enable-libmp3lame --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopus --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libtheora --enable-libtwolame --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-lzma --enable-zlib --enable-gmp --enable-libvorbis --enable-libvo-amrwbenc --enable-libspeex --enable-libxvid --enable-libaom --enable-avisynth --enable-libopenmpt --enable-libfdk-aac --enable-nonfree
+          sudo make
+          sudo make install
+          
       - name: Setup Debug Session
         uses: csexton/debugger-action@master
 
