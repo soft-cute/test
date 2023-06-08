@@ -5,7 +5,7 @@ import subprocess
 
 
 
-url = 'http://open-tct.douyucdn2.cn/dyliveflv3/5720533rEC7Us8xF_2000.flv?wsAuth=e8bf7335105e480eb040a72780674436&token=cpn-androidmpro-0-5720533-0a608c69d2cbd2d2a6b2c70fafed469772a6a745a363f631&logo=0&expire=0&did=698c90e4c311fe1e99208886c7a13976&origin=tct&vhost=play3&sid=351694230'
+url = 'http://open-tct.douyucdn2.cn/dyliveflv3/5720533rEC7Us8xF_2000.flv?wsAuth=eda9775210b9112de1f4c40f3a8c80dc&token=cpn-androidmpro-0-5720533-0a608c69d2cbd2d2108d8219d023e1a0bad1fbc09ab0ceaf&logo=0&expire=0&did=4cf83f7b4258944ba621231457fb1ac4&origin=tct&vhost=play3&sid=351694230'
 
 
 
