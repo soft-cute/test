@@ -20,7 +20,7 @@ jobs:
       - name: set up ffmpeg
         run: |
           tar xvf ./ffm/ffmpeg-n6.0-latest-linux64-gpl-6.0.tar.xz
-          sudo ln -s ./ffm/ffmpeg-n6.0-latest-linux64-gpl-6.0/ffmpeg /bin/ffmpeg
+          sudo ln -s $PWD/ffmpeg-n6.0-latest-linux64-gpl-6.0/bin/ffmpeg /bin/ffmpeg
 
       - name: Setup Debug Session
         uses: csexton/debugger-action@master

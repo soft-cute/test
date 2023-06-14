@@ -9,7 +9,7 @@ url = 'http://open-tct.douyucdn2.cn/dyliveflv3/5720533rEC7Us8xF_2000.flv?wsAuth=
 
 
 
-ffm = subprocess.run(f"""bash -c 'ffmpeg -t 30 -i "{url}" -c:a copy -c:v copy -f segment -segment_time 60 -strftime 1 %Y-%m-%d-%H-%M-%S.mp4'""",shell=True,stdin=subprocess.PIPE,stdout=subprocess.PIPE)
+ffm = subprocess.run(f"""bash -c 'ffmpeg -t 300 -i "{url}" -c:a copy -c:v copy -f segment -segment_time 60 -strftime 1 %Y-%m-%d-%H-%M-%S.mp4'""",shell=True,stdin=subprocess.PIPE,stdout=subprocess.PIPE)
 
 
 
